@@ -1,0 +1,33 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 🌞 Base App Theme -->
+    <style name="Base.Theme.Snacc" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@android:color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="Theme.Snacc" parent="Base.Theme.Snacc" />
+
+    <!-- 💫 Modal/Dialog Theme -->
+    <style name="Theme.Snacc.Dialog" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.7</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/ModalSlideUpAnimation</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <!-- ✨ Slide + Fade Modal Animation -->
+    <style name="ModalSlideUpAnimation">
+        <item name="android:windowEnterAnimation">@anim/modal_slide_up</item>
+        <item name="android:windowExitAnimation">@anim/modal_fade_out</item>
+    </style>
+
+</resources>

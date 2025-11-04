@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:interpolator/accelerate_decelerate"
+    android:repeatCount="infinite"
+    android:repeatMode="reverse">
+
+    <!-- Glow lembut: opacity naik-turun -->
+    <alpha
+        android:fromAlpha="1.0"
+        android:toAlpha="0.6"
+        android:duration="1500" />
+
+    <!-- Gerakan halus ke atas-bawah -->
+    <translate
+        android:fromYDelta="0%"
+        android:toYDelta="-3%"
+        android:duration="1500" />
+</set>

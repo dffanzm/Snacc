@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="6dp"
+    app:cardBackgroundColor="@color/secondaryColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- 🖼️ Gambar makanan -->
+        <ImageView
+            android:id="@+id/imgFood"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/food1"
+            android:contentDescription="Gambar Makanan"
+            android:background="@drawable/rounded_image_bg"
+            android:layout_marginBottom="8dp" />
+
+        <!-- 🍔 Nama Makanan -->
+        <TextView
+            android:id="@+id/tvFoodName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Combro Asli Bandung"
+            android:textColor="@color/textPrimary"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_semibold" />
+
+        <!-- 📖 Deskripsi -->
+        <TextView
+            android:id="@+id/tvFoodDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Makanan dari tepung dan isi oncom pedas."
+            android:textColor="@color/textSecondary"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins_light"
+            android:layout_marginTop="2dp" />
+
+        <!-- 🛒 Tombol Aksi (ikon putih background putih) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="12dp">
+
+            <!-- Tambah ke Keranjang -->
+
+            <!-- Order Sekarang -->
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAddToCart"
+                style="?attr/materialIconButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/textPrimary"
+                android:contentDescription="Tambah ke Keranjang"
+                app:cornerRadius="10dp"
+                app:icon="@drawable/outline_add_shopping_cart_24"
+                app:iconTint="@color/primaryColor" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnOrderNow"
+                style="?attr/materialIconButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/textPrimary"
+                app:icon="@drawable/baseline_shopping_cart_24"
+                app:iconTint="@color/primaryColor"
+                app:cornerRadius="10dp"
+                android:layout_marginStart="6dp"
+                android:contentDescription="Order Sekarang" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
